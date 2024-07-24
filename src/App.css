@@ -1,0 +1,41 @@
+/* Base styling for the navbar */
+nav {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Navbar link styling */
+  .nav-link {
+    color: #e5e7eb; /* Light gray color */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    position: relative;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  /* Navbar link hover effect */
+  .nav-link:hover {
+    color: #93c5fd; /* Light blue color */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  /* Adding an underline effect on hover */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #93c5fd; /* Light blue color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Animate the underline on hover */
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
