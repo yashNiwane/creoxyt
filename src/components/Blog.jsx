@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Logo from '../assets/Logo.jpg';
 
 const Blog = () => {
   return (
@@ -32,7 +33,7 @@ const Blog = () => {
         className="relative w-40 h-40 mb-6"
       >
         <motion.img 
-          src="src/assets/Logo.jpg" 
+          src={Logo}
           alt="Coming Soon" 
           className="w-full h-full object-cover rounded-full shadow-lg"
           initial={{ scale: 1 }}

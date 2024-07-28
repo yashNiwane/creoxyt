@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Logo from '../assets/Logo.jpg'
 
 const About = () => {
   return (
@@ -32,7 +33,7 @@ const About = () => {
         className="relative w-80 h-80 mb-6"
       >
         <motion.img 
-          src="src/assets/Logo.jpg" 
+          src={Logo} 
           alt="Creoxy Team" 
           className="w-full h-full object-cover rounded-full shadow-lg"
           initial={{ scale: 1 }}

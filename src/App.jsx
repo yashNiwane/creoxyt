@@ -20,6 +20,7 @@ const App = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+
             <Route path="/courses" element={<Course />} />
             <Route path="/about" element={<About />} />
             <Route path="/blogs" element={<Blogs />} />
@@ -29,8 +30,8 @@ const App = () => {
 
         {/* Navigation menu */}
         <div className="flex justify-center mt-auto">
-          <nav className="bg-gray-800 rounded-lg shadow-xl p-2">
-            <ul className="flex space-x-4">
+          <nav className="bg-gray-800 rounded-lg shadow-xl p-1">
+            <ul className="flex space-x">
               <li>
                 <Link 
                   to="/" 

@@ -116,3 +116,6 @@ h2 {
 .answer-container, .image-container {
     transition: all 0.5s ease-in-out;
 }
+.image-container{
+max-width: 400px;
+}
